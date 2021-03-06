@@ -7,12 +7,35 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="YearBook"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="24dp" />
+
+    <Button
+        android:id="@+id/barryPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Barry"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="601dp" />
+
+    <Button
+        android:id="@+id/chrisPageB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chris"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="601dp" />
+
+    <Button
+        android:id="@+id/husnainPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Husnain"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="601dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

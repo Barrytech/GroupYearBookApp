@@ -6,4 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".BarryActivity">
 
+    <Button
+        android:id="@+id/chrisPageB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHRIS"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="611dp" />
+
+    <Button
+        android:id="@+id/mainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="611dp" />
+
+    <Button
+        android:id="@+id/husnainPageB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TARIQ"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="611dp" />
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHARE"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="42dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
