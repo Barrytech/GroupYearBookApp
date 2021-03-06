@@ -46,6 +46,7 @@ public class BarryActivity extends AppCompatActivity {
                 startActivity(new Intent(BarryActivity.this, ChrisActivity.class));
             }
         });
+
         //click button to Husnain page
         Button toHusnain = (Button) findViewById(R.id.open_activity_button);
 
@@ -65,5 +66,6 @@ public class BarryActivity extends AppCompatActivity {
                 startActivity(new Intent(BarryActivity.this, MainActivity.class));
             }
         });
+
     }
 }
