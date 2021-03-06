@@ -12,8 +12,15 @@ public class BarryActivity extends AppCompatActivity {
 //        setContentView(R.layout.activity_barry);
 //    }
     Button bt;
+    //webview on my page
+    private theWebEmb WebView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        theWebEmb = (WebView) findViewById(R.id.theWebEmb);
+        theWebEmb.setWebViewClient(new WebViewClient());
+        theWebEmb.loadUrl('https://www.google.com/?client=safari');
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_barry);
         bt = (Button)findViewById(R.id.webviewButton);
