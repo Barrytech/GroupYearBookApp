@@ -23,8 +23,13 @@ public class BarryActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_barry);
+<<<<<<< HEAD
         bt = (Button) findViewById(R.id.button);
         bt.setOnClickListneer(new View.OnClickListener() {
+=======
+        bt = (Button)findViewById(R.id.webviewButton);
+        bt.setOnClickListner(new View.OnClickListener() {
+>>>>>>> f690985d536b1bc579680acb68c251c754cb8006
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(Intent.ACTION_SEND);
