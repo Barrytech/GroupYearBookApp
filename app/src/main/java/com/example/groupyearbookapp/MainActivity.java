@@ -14,26 +14,23 @@ public class MainActivity extends AppCompatActivity {
 
     //click button from main to BarryActivity
     Button maintoBar = (Button) findViewById(R.id.open_activity_button);
-     btn.setOnClickListener(new View.OnClickListener() {
-        @Override
+     maintoBar.setOnClickListener(new View.OnClickListener() {
         public void onClick (View v){
             startActivity(new Intent(MainActivity.this, BarryActivity.class));
     }
     });
     //click button to Chris pagee
     Button maintoChris = (Button) findViewById(R.id.open_activity_button);
-     btn.setOnClickListener(new View.OnClickListener() {
-         @Override
-         public void onClick (View v){
+     maintoChris.setOnClickListener(new View.OnClickListener() {
+        public void onClick (View v){
              startActivity(new Intent(MainActivity.this, Husnain.class));
         }
     });
 
     //click button to Husnain page
     Button maintoHusnain = (Button) findViewById(R.id.open_activity_button);
-    btn.setOnClickListener(new View.OnClickListener() {
-         @Override
-         public void onClick (View v){
+    maintoHusnain.setOnClickListener(new View.OnClickListener() {
+        public void onClick (View v){
             startActivity(new Intent(MainActivity.this, Husnain.class));
         }
     });

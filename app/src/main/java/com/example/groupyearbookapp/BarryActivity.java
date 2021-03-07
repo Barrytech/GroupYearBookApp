@@ -19,18 +19,14 @@ public class BarryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         theWebEmb = (WebView) findViewById(R.id.theWebEmb);
         theWebEmb.setWebViewClient(new WebViewClient());
-        theWebEmb.loadUrl('https://www.google.com/?client=safari');
+        theWebEmb.loadUrl("https://www.google.com/?client=safari");
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_barry);
-<<<<<<< HEAD
         bt = (Button) findViewById(R.id.button);
         bt.setOnClickListneer(new View.OnClickListener() {
-=======
         bt = (Button)findViewById(R.id.webviewButton);
         bt.setOnClickListner(new View.OnClickListener() {
->>>>>>> f690985d536b1bc579680acb68c251c754cb8006
-            @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(Intent.ACTION_SEND);
                 myIntent.setType("text/plain");
@@ -42,11 +38,11 @@ public class BarryActivity extends AppCompatActivity {
             }
         });
 
-        //click button to chris pagee
+        //click button to chris page
         Button toChris= (Button) findViewById(R.id.open_activity_button);
 
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
+        toChris.setOnClickListener(new View.OnClickListener() {
+
             public void onClick(View v) {
                 startActivity(new Intent(BarryActivity.this, ChrisActivity.class));
             }
@@ -55,8 +51,7 @@ public class BarryActivity extends AppCompatActivity {
         //click button to Husnain page
         Button toHusnain = (Button) findViewById(R.id.open_activity_button);
 
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
+        toHusnain.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(BarryActivity.this, Husnain.class));
             }
@@ -65,8 +60,7 @@ public class BarryActivity extends AppCompatActivity {
         //click button to main activity page
         Button toMain = (Button) findViewById(R.id.open_activity_button);
 
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
+        toMain.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(BarryActivity.this, MainActivity.class));
             }
