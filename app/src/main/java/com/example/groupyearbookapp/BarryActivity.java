@@ -38,7 +38,7 @@ public class BarryActivity extends AppCompatActivity {
             }
         });
 
-        //click button to chris pagee
+        //click button to chris page
         Button toChris= (Button) findViewById(R.id.open_activity_button);
 
         toChris.setOnClickListener(new View.OnClickListener() {
