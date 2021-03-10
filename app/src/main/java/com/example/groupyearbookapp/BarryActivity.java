@@ -9,20 +9,10 @@ import android.widget.Button;
 
 public class BarryActivity extends AppCompatActivity {
 
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_barry);
-//    }
     Button Shr;
-    //webview on my page
-//    private theWebEmb WebView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-//        theWebEmb = (WebView) findViewById(R.id.theWebEmb);
-//        theWebEmb.setWebViewClient(new WebViewClient());
-//        theWebEmb.loadUrl("https://www.google.com/?client=safari");
 
 
         //takes care of the share button
