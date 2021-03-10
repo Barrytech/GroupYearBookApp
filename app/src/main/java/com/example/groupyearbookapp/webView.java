@@ -18,7 +18,7 @@ public class webView extends AppCompatActivity {
 
         webView.setWebViewClient(new WebViewClient());
 
-        WebView.loadUrl("https://www.google.com/");
+        webView.loadUrl("https://www.google.com/");
 
     }
     @Override
