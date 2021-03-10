@@ -27,6 +27,22 @@ public class ChrisActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //Button for moving to barrys
+        Button ChristoBarry = (Button) findViewById(R.id.barryBook);
+        ChristoBarry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ChrisActivity.this, BarryActivity.class));
+            }
+        });
+        //Button for moving to husains activity
+        Button ChristoHusains = (Button) findViewById(R.id.HusnainBook);
+        ChristoHusains.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ChrisActivity.this, HusnainActivity.class));
+            }
+        });
     }
 
 
