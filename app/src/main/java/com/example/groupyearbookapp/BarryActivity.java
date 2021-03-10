@@ -3,6 +3,8 @@ package com.example.groupyearbookapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class BarryActivity extends AppCompatActivity {
 
@@ -12,20 +14,24 @@ public class BarryActivity extends AppCompatActivity {
 //        setContentView(R.layout.activity_barry);
 //    }
     Button bt;
+    webView wb;
     //webview on my page
-    private theWebEmb WebView;
+//    private theWebEmb WebView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        theWebEmb = (WebView) findViewById(R.id.theWebEmb);
-        theWebEmb.setWebViewClient(new WebViewClient());
-        theWebEmb.loadUrl("https://www.google.com/?client=safari");
+//        theWebEmb = (WebView) findViewById(R.id.theWebEmb);
+//        theWebEmb.setWebViewClient(new WebViewClient());
+//        theWebEmb.loadUrl("https://www.google.com/?client=safari");
 
+
+        //takes care of the share button
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_barry);
-        bt = (Button) findViewById(R.id.button);
-        bt.setOnClickListneer(new View.OnClickListener() {
-        bt = (Button)findViewById(R.id.webviewButton);
+        bt = findViewById(R.id.shareButton);
+        wb = findViewById(R.id.webviewButton);
+        bt.setOnClickListner(new View.OnClickListener() {
+
         bt.setOnClickListner(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent myIntent = new Intent(Intent.ACTION_SEND);
