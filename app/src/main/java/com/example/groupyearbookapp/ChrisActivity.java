@@ -19,31 +19,43 @@ public class ChrisActivity extends AppCompatActivity {
 
         button = findViewById(R.id.webviewButton);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new View.OnClickListener()){
             @Override
-            public void onClick(View v) {
+            public void onClick(View v){
+                Intent intent = new Intent((ChrisActivity.this, WebView.class);
+//                startAtivity(intent);
+             }
+            });
+        }
+    }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_chris);
 
-                Intent intent = new Intent(ChrisActivity.this, webView.class);
+        button = findViewById(R.id.HusnainBook);
+
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void OnClick(View v){
+                Intent intent = new Intent(ChrisActivity.this, HusnainActivity.class);
                 startActivity(intent);
             }
         });
-        //Button for moving to barrys
-        Button ChristoBarry = (Button) findViewById(R.id.barryBook);
-        ChristoBarry.setOnClickListener(new View.OnClickListener() {
+    }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_chris);
+
+        button = findViewById(R.id.barryBook);
+
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ChrisActivity.this, BarryActivity.class));
-            }
-        });
-        //Button for moving to husains activity
-        Button ChristoHusains = (Button) findViewById(R.id.HusnainBook);
-        ChristoHusains.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ChrisActivity.this, HusnainActivity.class));
+            public void OnClick(View v) {
+                Intent intent = new Intent(ChrisActivity.this, BarryActivity.class);
+                startActivity(intent);
             }
         });
     }
-
-
 }
