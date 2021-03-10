@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
+import android.widget.Button;
 
 public class ChrisActivity extends AppCompatActivity {
 
@@ -20,9 +21,9 @@ public class ChrisActivity extends AppCompatActivity {
 
         button.setOnClickListener(new View.OnClickListener()){
             @Override
-                    public void onClick(View v){
+            public void onClick(View v){
                 Intent intent = new Intent((ChrisActivity.this, WebView.class);
-                startAtivity(intent);
+//                startAtivity(intent);
              }
             });
         }
