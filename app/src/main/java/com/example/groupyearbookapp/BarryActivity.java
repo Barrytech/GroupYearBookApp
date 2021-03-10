@@ -4,10 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+
 import android.view.View;
+
+
 import android.widget.Button;
 
 public class BarryActivity extends AppCompatActivity {
+
 
     Button Shr;
 
@@ -60,6 +64,7 @@ public class BarryActivity extends AppCompatActivity {
             }
         });
 
-    }
+ 
+    
 }
 }

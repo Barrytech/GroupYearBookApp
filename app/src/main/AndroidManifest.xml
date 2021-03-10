@@ -12,27 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GroupYearBookApp"
         android:usesCleartextTraffic="true">
-        <activity android:name=".webView"></activity>
-        <activity android:name=".ChrisActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".webView" />
+
+        <activity android:name=".ChrisActivity">
+
         </activity>
         <activity android:name=".HusnainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".BarryActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
